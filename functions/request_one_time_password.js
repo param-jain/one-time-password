@@ -14,7 +14,7 @@ module.exports = function(req, res) {
 
       twilio.messages.create({
         body: 'Your code is ' + code,
-        to: phone,
+        to: '+'+phone,
         from: '+18502795419'
       }, (err) => {
         if (err) { return res.status(422).send(err); }

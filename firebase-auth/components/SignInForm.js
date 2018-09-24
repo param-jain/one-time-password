@@ -26,7 +26,7 @@ class SignInForm extends Component {
         return (
             <View>
                 <View style={{ marginBottom: 10 }}>
-                    <FormLabel>Enter Phone Number</FormLabel>
+                    <FormLabel>Enter Phone Number starting with '+91'</FormLabel>
                     <FormInput
                         value = {this.state.phone}
                         onChangeText={phone => this.setState({ phone })}
@@ -34,7 +34,7 @@ class SignInForm extends Component {
                 </View>
 
                 <View style={{ marginBottom: 10 }}>
-                    <FormLabel>Enter Phone Number</FormLabel>
+                    <FormLabel>Enter Code Sent to your Mobile</FormLabel>
                     <FormInput
                         value = {this.state.code}
                         onChangeText={code => this.setState({ code })}
